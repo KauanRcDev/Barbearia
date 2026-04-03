@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamento</title>
+  <link rel="stylesheet" href="agendamento.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="index.html" class="btn-voltar">← Voltar</a>
+<section class="agendamento">
+
+  <h1>AGENDE SEU <span>HORÁRIO</span></h1>
+<p class="sub">Escolha o melhor momento para sua transformação.</p>
+<div class="linha"></div>
+  <div class="container">
+
+    <!-- ESQUERDA -->
+    <div class="left">
+      <h3>Informações Importantes</h3>
+
+      <div class="item">
+        <span>⏰</span>
+        <div>
+          <small>TEMPO DE TOLERÂNCIA</small>
+          <p>15 minutos de atraso</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <span>✔</span>
+        <div>
+          <small>CANCELAMENTO</small>
+          <p>Avisar com 2h de antecedência</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <span>📍</span>
+        <div>
+          <small>LOCALIZAÇÃO</small>
+          <p>Av. Paulista, 1000 - SP</p>
+        </div>
+      </div>
+
+      <h3>Horário de Funcionamento</h3>
+      <p>Seg - Sex: 09:00 - 20:00</p>
+      <p>Sábado: 09:00 - 18:00</p>
+      <p>Domingo: Fechado</p>
+    </div>
+
+    <!-- DIREITA -->
+    <div class="right">
+      <h2>Formulário de Agendamento</h2>
+
+      <div class="row">
+        <input type="text" id="nome" placeholder="Seu nome">
+        <input type="text" id="telefone" placeholder="WhatsApp">
+      </div>
+
+      <select id="servico">
+        <option>Selecione um serviço</option>
+        <option>Corte</option>
+        <option>Barba</option>
+        <option>Corte + Barba</option>
+      </select>
+
+      <div class="row">
+        <input type="date" id="data">
+        <input type="time" id="hora">
+      </div>
+
+      <button id="confirmar">CONFIRMAR AGENDAMENTO</button>
+    </div>
+
+  </div>
+
+</section>
+
+
+<script src="agendamento.js"></script>
+</body>
+</html>

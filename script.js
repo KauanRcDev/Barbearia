@@ -9,9 +9,25 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Botão agendar (exemplo)
-document.querySelectorAll(".btn-gold").forEach(btn => {
-  btn.addEventListener("click", () => {
-    alert("Sistema de agendamento em breve!");
-  });
-});
+// SLIDER DE IMAGENS
+const imagens = [
+  "./Imagens_Divino´s/mid_fade_V.jpeg",
+  "./Imagens_Divino´s/low_fade_freestyle.jpeg",
+  "./Imagens_Divino´s/high_fade_pigm.jpeg"
+];
+
+let index = 0;
+const slider = document.getElementById("slider");
+
+setInterval(() => {
+  slider.style.opacity = 0;
+
+  setTimeout(() => {
+    index = (index + 1) % imagens.length;
+    slider.src = imagens[index];
+    slider.style.opacity = 1;
+  }, 500);
+
+}, 6000);
+
+
